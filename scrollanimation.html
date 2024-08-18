@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Web Designer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.23/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+        }
+        .section {
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="text-4xl font-bold">John Doe</h1>
+            <nav class="space-x-8">
+                <a href="#hero" class="hover:text-pink-400 transition">Home</a>
+                <a href="#about" class="hover:text-pink-400 transition">About</a>
+                <a href="#portfolio" class="hover:text-pink-400 transition">Portfolio</a>
+                <a href="#experience" class="hover:text-pink-400 transition">Experience</a>
+                <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg h-screen flex items-center justify-center text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white px-6">
+            <h2 class="text-6xl md:text-7xl font-extrabold mb-4 animate__animated animate__fadeIn animate__delay-1s">Hi, I'm John Doe</h2>
+            <p class="text-lg md:text-xl mb-8 animate__animated animate__fadeIn animate__delay-2s">Innovative Web Designer & Developer</p>
+            <a href="#contact" class="bg-pink-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-pink-400 transition transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-gray-800 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-8">About Me</h2>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto">I'm a creative web designer with a passion for building visually stunning and highly functional websites. My goal is to merge aesthetic design with user-friendly interfaces, creating memorable online experiences.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8 text-white">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative group transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Project One</h3>
+                            <p class="text-lg">A visually compelling website for a local business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                            <p class="text-lg">A modern e-commerce platform with a sleek design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group transition-transform duration-300 hover:scale-105">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-64 object-cover rounded-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+                            <p class="text-lg">An interactive site featuring engaging animations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-gray-800 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-8 text-white">Experience</h2>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto">With over 5 years of experience in both design and development, I've crafted various successful projects. I specialize in creating intuitive and aesthetically pleasing designs that enhance user experience.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gray-900 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold mb-8 text-white">Contact Me</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 mb-4 border border-gray-700 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 mb-4 border border-gray-700 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                <textarea name="message" placeholder="Your Message" rows="6" class="w-full p-4 mb-4 border border-gray-700 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required></textarea>
+                <button type="submit" class="bg-pink-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-pink-400 transition transform hover:scale-105">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+
+    <!-- Tailwind CSS Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/dist/animate.min.js"></script>
+</body>
+</html>
